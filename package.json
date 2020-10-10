@@ -21,8 +21,8 @@
         "registry": "https://registry.npmjs.org/"
     },
     "keywords": [
-        "apis",
-        "axios",
+        "number precision",
+        "floating problem",
         "typescript"
     ],
     "scripts": {

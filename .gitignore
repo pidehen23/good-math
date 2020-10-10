@@ -1,7 +1,5 @@
-node_modules/*
-server/node_modules/*
-test/dist/*
-dist-test/*
+node_modules
+dist-test
 .idea/
 .cache/
 .vscode/
@@ -10,5 +8,5 @@ package-lock.json
 */.DS_Store
 .rpt2_cache
 *.log
-converage/*
+coverage/*
 .nyc_output
