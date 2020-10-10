@@ -1,7 +1,7 @@
 node_modules/*
 server/node_modules/*
-dist/*
 test/dist/*
+dist-test/*
 .idea/
 .cache/
 .vscode/

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "target": "ES2017",
+    "module": "esnext",
+    "typeRoots": ["./typings"],
+    "outDir": "dist-test",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./test/*"]
+    }
+  },
+  "include": ["./test/**/*"],
+  "exclude": ["node_modules"]
+}

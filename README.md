@@ -3,7 +3,7 @@
 > JavaScript 精度解决方案
 
 [![npm version](https://img.shields.io/npm/v/good-math.svg)](https://www.npmjs.com/package/good-math)
-提供了一种解决 JavaScript 的计算中精度丢失问题的方案
+基于[number-precision](https://github.com/nefe/number-precision)提供了一种解决 JavaScript 的计算中精度丢失问题的方案。
 
 ## 发布
 
