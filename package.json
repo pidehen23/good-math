@@ -32,6 +32,7 @@
         "fix": "eslint src --ext .tsx,.ts --color --fix",
         "test": "tsc -p tsconfig.test.json && nyc --reporter=lcov --reporter=text --reporter=json ava && rm -rf .nyc_output",
         "gc": "git-cz",
+        "first-release": "standard-version -- -f -r v0.0.1",
         "patch": "standard-version -r patch",
         "minor": "standard-version -r minor",
         "major": "standard-version -r major",
