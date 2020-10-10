@@ -1,0 +1,77 @@
+{
+    "name": "good-math",
+    "version": "0.0.1",
+    "description": "提供了一种解决JavaScript的计算中精度丢失问题的方案",
+    "main": "dist/index.js",
+    "module": "dist/index-esm-min.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "license": "ISC",
+    "author": "chenjiajing",
+    "private": false,
+    "homepage": "https://github.com/chenjiajing23/good-math",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:chenjiajing23/good-math.git",
+        "directory": "packages/good-math"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "keywords": [
+        "apis",
+        "axios",
+        "typescript"
+    ],
+    "scripts": {
+        "build": "npm run clear && tsc",
+        "dev": "tsc -w",
+        "clear": "rimraf dist",
+        "fix": "eslint src --ext .tsx,.ts --color --fix",
+        "test": "tsc -p tsconfig.test.json && nyc --reporter=lcov --reporter=text --reporter=json ava && rm -rf .nyc_output",
+        "gc": "git-cz",
+        "patch": "standard-version -r patch",
+        "minor": "standard-version -r minor",
+        "major": "standard-version -r major",
+        "pub": "npm run build && npx git push --follow-tags origin master && npx npm publish --access=public"
+    },
+    "peerDependencies": {},
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@types/node": "^14.11.8",
+        "@typescript-eslint/parser": "^4.4.0",
+        "ava": "^3.13.0",
+        "commitizen": "^4.2.1",
+        "eslint": "^7.11.0",
+        "eslint-config-prettier": "^6.12.0",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.4.0",
+        "nyc": "^15.1.0",
+        "prettier": "^2.1.2",
+        "rimraf": "^3.0.2",
+        "standard-version": "^9.0.0",
+        "typescript": "^4.0.3"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run fix  && lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,jsx}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
+}
