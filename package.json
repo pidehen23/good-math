@@ -1,6 +1,6 @@
 {
     "name": "good-math",
-    "version": "0.0.2-alpha.0",
+    "version": "0.0.0",
     "description": "提供了一种解决JavaScript的计算中精度丢失问题的方案",
     "main": "dist/index.js",
     "module": "dist/index-esm-min.js",
