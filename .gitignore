@@ -8,3 +8,6 @@ dist-test/*
 package-lock.json
 .DS_Store
 */.DS_Store
+.rpt2_cache
+*.log
+converage/*
