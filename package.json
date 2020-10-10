@@ -1,6 +1,6 @@
 {
     "name": "good-math",
-    "version": "0.0.1",
+    "version": "0.0.2-alpha.0",
     "description": "提供了一种解决JavaScript的计算中精度丢失问题的方案",
     "main": "dist/index.js",
     "module": "dist/index-esm-min.js",
@@ -36,7 +36,8 @@
         "patch": "standard-version -r patch",
         "minor": "standard-version -r minor",
         "major": "standard-version -r major",
-        "pub": "npm run build && npx git push --follow-tags origin master && npx npm publish --access=public"
+        "pub": "npm run build && npx git push --follow-tags origin master && npx npm publish --access=public",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
     },
     "peerDependencies": {},
     "dependencies": {},
@@ -48,6 +49,7 @@
         "@typescript-eslint/parser": "^4.4.0",
         "ava": "^3.13.0",
         "commitizen": "^4.2.1",
+        "conventional-changelog-cli": "^2.1.0",
         "eslint": "^7.11.0",
         "eslint-config-prettier": "^6.12.0",
         "husky": "^4.3.0",
