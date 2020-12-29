@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1](https://github.com/chenjiajing23/good-math/compare/v0.0.0...v0.0.1) (2020-12-29)
+
+
+### Features
+
+* 🎸 main ([f38e4fb](https://github.com/chenjiajing23/good-math/commit/f38e4fb723a29cf1826326fbe019b44e471673e9))
+* 🎸 master ([d73f5e0](https://github.com/chenjiajing23/good-math/commit/d73f5e0a37c4b2af76698128cdd1493d4116e1fb))
+
+
+### Bug Fixes
+
+* 🐛 master ([9e7ab6a](https://github.com/chenjiajing23/good-math/commit/9e7ab6ab5b621f9db5087ca8e74b51e3e7d6c0cf))
+
 ## 0.0.0 (2020-10-10)
 
 
